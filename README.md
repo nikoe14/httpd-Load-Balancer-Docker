@@ -20,14 +20,14 @@ If you have other OS click [here](https://docs.docker.com/engine/installation/).
 After Docker instalation clone this repository.
 
 ```
-git clone 
+git clone https://github.com/nikoe14/https-Load-Balancer-Docker.git
 ```
 You will see the following directory structure.
 
 ### Directories Structure
 
 ```
-/project-folder/
+/https-Load-Balancer-Docker/
 
 	├── httpd_custom
 	│
@@ -39,7 +39,7 @@ You will see the following directory structure.
 ```
 Then open a terminal and do the following.
 ```
-cd project-folder 
+cd https-Load-Balancer-Docker 
 ```
 ```
 docker-compose up 
