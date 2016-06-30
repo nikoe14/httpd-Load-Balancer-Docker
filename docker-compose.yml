@@ -1,0 +1,23 @@
+# Load Balancer using NGINX - UNICEN - docker-compose.yml
+#
+# VERSION               0.0.1
+version: '2'
+
+services:
+
+  Load_Balancer_nginx:
+    image: nginx_custom
+    build:
+      context: ./nginx_custom
+    container_name: Load_Balancer_nginx
+    depends_on:
+      - container1
+      - container2
+
+  container1:
+      image: nikoe14/httpd-container-info
+      container_name: container1.com
+
+  container2:
+      image: nikoe14/httpd-container-info
+      container_name: container2.com
